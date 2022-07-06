@@ -1,0 +1,10 @@
+matriz,contando,i,i < contador,"+ resultado.push(matriz[i][i])",resultado,return
+" [[8, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]]",3,0,true,"resultado.push([0])",8,
+" [[8, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]]",3,1,true,"resultado.push([1] [1])","8,5",
+" [[8, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]]",3,2,true,"resultado.push([2] [2])","8,5,9",
