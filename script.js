@@ -10,8 +10,8 @@ function calculateSalary(salary, vendas) {
 }
 // console.log(calculateSalary(1400, 1200))
 
-function cashMachine(saque) {
-    let balanco = calculateSalary(1400, 200)
+function cashMachine(saque, salario, vendas) {
+    let balanco = calculateSalary(salario,vendas)
     let notaDe200 = 0
     let notaDe100 = 0
     let notaDe50 = 0
@@ -33,30 +33,29 @@ function cashMachine(saque) {
     }
     return `notas de 100: ${notaDe100} notas de 200: ${notaDe200} notas de 50: ${notaDe50} valor restante é: ${resto.toFixed(2)}`
 }
-// console.log(cashMachine(100))
+// console.log(cashMachine(50,1400,400))
 
-function calculateStock(inicial, maximo, minimo) {
+function calculateStock(atual, maximo, minimo) {
     let media = (maximo + minimo) / 2
-    console.log(media)
-    if (inicial >= media) {
+    if (atual >= media) {
         return `Não efetuar compra`
     } else {
         return `Efetuar compra`
     }
 
 }
-// console.log(calculateStock(2000,3000,20))
+// console.log(calculateStock(20,3000,20))
 
 function calculateAge(anoNascimento, anoAtual) {
     let anosIdade = anoAtual - anoNascimento
     let mesesIdade = anosIdade * 12
     let diasIdade = anosIdade * 365
-    let semanasIdade = anosIdade * 48
+    let semanasIdade = anosIdade * 52
     return `idade: ${anosIdade}, idade em meses: ${mesesIdade}, idade em dias: ${diasIdade}, idade em semanas: ${semanasIdade}`
 }
 // console.log(calculateAge(1998,2022))
 
-let matriz =
+let matriz2 =
     [[8, 2, 3],
     [4, 5, 6],
     [7, 8, 9]]
@@ -69,4 +68,4 @@ function getDiagonal(matriz) {
     }
     return resultado
 }
-console.log(getDiagonal((matriz)))
+// console.log(getDiagonal((matriz2)))
